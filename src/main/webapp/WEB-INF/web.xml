@@ -5,6 +5,7 @@
              http://java.sun.com/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
 
+    <!-- Servlet Configuration -->
     <servlet>
         <servlet-name>GuessGameServlet</servlet-name>
         <servlet-class>com.game.GuessGameServlet</servlet-class>
@@ -13,6 +14,26 @@
     <servlet-mapping>
         <servlet-name>GuessGameServlet</servlet-name>
         <url-pattern>/play</url-pattern>
+    </servlet-mapping>
+
+    <!-- Default Servlet Mapping for JSP -->
+    <servlet>
+        <servlet-name>default</servlet-name>
+        <servlet-class>org.apache.catalina.servlets.DefaultServlet</servlet-class>
+        <init-param>
+            <param-name>debug</param-name>
+            <param-value>0</param-value>
+        </init-param>
+        <init-param>
+            <param-name>listings</param-name>
+            <param-value>false</param-value>
+        </init-param>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>/index.jsp</url-pattern>
     </servlet-mapping>
 
 </web-app>
