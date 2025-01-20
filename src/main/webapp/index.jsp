@@ -7,6 +7,6 @@
 </head>
 <body>
     <h1>Nobody wants to Guess any Number</h1>
-    <p>Welcome to the Guess the Number Game! Try to guess the secret number between 1 and 100.</p>
+    <p>Welcome to the Guess the Number Game! You wont get anything by guessing so dont Try to guess the secret number between 1 and 100.</p>
 </body>
 </html>
